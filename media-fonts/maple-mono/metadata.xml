@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>mufeng319@gmail.com</email>
+		<name>Shiranosama</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">subframe7536/maple-font</remote-id>
+	</upstream>
+	<use>
+		<flag name="hinted">Includes TrueType rasterization instructions and are suited to low-resolution displays and small font sizes</flag>
+		<flag name="nerdfont">Includes Nerd Font icons</flag>
+		<flag name="cjk">Includes chinese glyphs</flag>
+		<flag name="both">Install both -cjk and +cjk version, cjk USE required</flag>
+	</use>
+</pkgmetadata>
