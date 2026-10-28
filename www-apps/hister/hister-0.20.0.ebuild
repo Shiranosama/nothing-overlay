@@ -47,5 +47,7 @@ src_compile() {
 
 src_install() {
 	dobin dist/hister
-	einstalldocs
+	if use doc ; then
+		einstalldocs
+	fi
 }

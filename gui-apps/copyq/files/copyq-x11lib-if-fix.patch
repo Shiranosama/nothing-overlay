@@ -1,0 +1,21 @@
+diff -Naur a/src/platform/x11/x11platform.cmake b/src/platform/x11/x11platform.cmake
+--- a/src/platform/x11/x11platform.cmake	2026-10-03 13:53:58.000000000 +0800
++++ b/src/platform/x11/x11platform.cmake	2026-10-29 00:04:52.465611060 +0800
+@@ -11,6 +11,8 @@
+ list(APPEND copyq_qt_modules DBus)
+ 
+ OPTION(WITH_X11 "Enable X11 support (global shortcuts, getting window titles)" ON)
++
++set(copyq_LIBRARIES ${copyq_LIBRARIES} ${X11_LIBRARIES})
+ if (WITH_X11)
+     add_definitions( -DCOPYQ_WITH_X11 )
+ 
+@@ -35,7 +37,7 @@
+         )
+     set(USE_QXT TRUE)
+ 
+-    set(copyq_LIBRARIES ${copyq_LIBRARIES} ${X11_LIBRARIES} ${X11_Xfixes_LIB})
++    set(copyq_LIBRARIES ${copyq_LIBRARIES} ${X11_Xfixes_LIB})
+ endif()
+ 
+ # Wayland clipboard

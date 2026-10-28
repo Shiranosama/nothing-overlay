@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>mufeng319@gmail.com</email>
+		<name>Shiranosama</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">hluk/CopyQ</remote-id>
+	</upstream>
+	<use>
+		<flag name="X">Add X11 compatibility(regardless of whether this USE is enabled, x11-libs/libX11 is always installed because CopyQ requires it)</flag>
+		<flag name="gnome">Install GNOME extension, required for clipboard monitoring</flag>
+		<flag name="qca">Enable QCA-based tab encryption(regardless of whether this USE is enabled, legacy encryption based on app-crypt/gnupg is always supported)</flag>
+		<flag name="keychain">Enable system keyring integration using QtKeychain(qca required)</flag>
+		<flag name="notification">Build with native notification support</flag>
+		<flag name="audio">Build with audio playback support(miniaudio)</flag>
+	</use>
+</pkgmetadata>
