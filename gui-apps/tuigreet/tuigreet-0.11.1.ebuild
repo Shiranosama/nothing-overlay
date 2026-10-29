@@ -288,7 +288,7 @@ SRC_URI="
 	${CARGO_CRATE_URIS}
 "
 
-LICENSE="GPL-3+"
+LICENSE="GPL-3.0"
 # Dependent crate licenses
 LICENSE+=" Apache-2.0 CC0-1.0 GPL-3 ISC MIT MPL-2.0 Unicode-3.0 ZLIB"
 SLOT="0"
@@ -297,7 +297,7 @@ RESTRICT="mirror"
 
 RUST_MIN_VER="1.91.0"
 RDEPEND="
-    acct-group/greetd
+	acct-group/greetd
 	acct-user/greetd
 	gui-libs/greetd
 "

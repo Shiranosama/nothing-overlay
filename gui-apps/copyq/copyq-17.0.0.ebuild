@@ -12,7 +12,7 @@ HOMEPAGE="
 "
 SRC_URI="https://github.com/hluk/CopyQ/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-3+"
+LICENSE="GPL-3.0+"
 SLOT="0"
 RESTRICT="mirror"
 KEYWORDS="-* amd64"
