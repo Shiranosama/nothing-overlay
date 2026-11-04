@@ -7,7 +7,11 @@ BIN_P="dart-sass-${PV}"
 
 DESCRIPTION="The reference implementation of Sass, written in Dart."
 HOMEPAGE="https://sass-lang.com/dart-sass"
-SRC_URI="https://github.com/sass/dart-sass/releases/download/${PV}/${BIN_P}-linux-x64.tar.gz -> ${P}.tar.gz"
+SRC_URI="
+	amd64? (
+		https://github.com/sass/dart-sass/releases/download/${PV}/${BIN_P}-linux-x64.tar.gz -> ${P}.tar.gz
+	)
+"
 
 LICENSE="MIT"
 SLOT="0"
