@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>mufeng319@gmail.com</email>
+		<name>Shiranosama</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="gtihub">gohugoio/hugo</remote-id>
+	</upstream>
+	<use>
+		<flag name="deploy">To build and install the deploy edition</flag>
+		<flag name="extended">To build and install the extended edition</flag>
+	</use>
+</pkgmetadata>

@@ -39,6 +39,11 @@ src_compile() {
 	local BUILD_FLAGS="-tags=netgo,osusergo"
 	mkdir -p dist || die
 
+	export CGO_CFLAGS="${CFLAGS}"
+	export CGO_CPPFLAGS="${CPPFLAGS}"
+	export CGO_CXXFLAGS="${CXXFLAGS}"
+	export CGO_LDFLAGS="${LDFLAGS}"
+
 	CGO_ENABLED=1 \
 	ego build \
 		$BUILD_FLAGS \
